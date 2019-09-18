@@ -16,30 +16,26 @@ a {
 
 .show {
   display: flex; }
-
-.show__poster img {
-  width: 100px;
-  padding-right: 24px; }
-
-.show__title {
-  font-family: "Open Sans", Roboto, Arial, sans-serif; }
-
-.show__company {
-  letter-spacing: .025em;
-  font-size: .75rem;
-  font-weight: 400;
-  line-height: 1rem;
-  color: #5f6368;
-  margin-top: 6px; }
-
-.show__description {
-  display: none;
-  letter-spacing: .01428571em;
-  font-size: .875rem;
-  font-weight: 400;
-  line-height: 1.25rem;
-  color: #3c4043;
-  padding-top: 24px; }
+  .show__poster img {
+    width: 100px;
+    padding-right: 24px; }
+  .show__title {
+    font-family: "Open Sans", Roboto, Arial, sans-serif; }
+  .show__company {
+    letter-spacing: .025em;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: #5f6368;
+    margin-top: 6px; }
+  .show__description {
+    display: none;
+    letter-spacing: .01428571em;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: #3c4043;
+    padding-top: 24px; }
 
 .show-sidebar {
   color: #5f6368;
@@ -67,40 +63,34 @@ a {
   display: flex;
   border-bottom: 1px solid #dadce0;
   justify-content: space-between; }
-
-.episode__cover {
-  display: none; }
-
-.episode__title {
-  letter-spacing: .01785714em;
-  font-size: .875rem;
-  font-weight: 500;
-  line-height: 1.25rem;
-  color: #3c4043;
-  overflow: hidden;
-  text-overflow: ellipsis; }
-
-.episode__body {
-  overflow: hidden;
-  padding-bottom: 12px;
-  padding-right: 16px;
-  padding-top: 12px;
-  white-space: nowrap; }
-
-.episode__meta {
-  display: flex;
-  letter-spacing: .025em;
-  font-size: .75rem;
-  font-weight: 400;
-  line-height: 1rem;
-  color: #5f6368; }
-
-.episode__number {
-  padding-right: 1rem; }
-
-.episode__play-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer; }
-  .episode__play-button svg {
-    fill: #1a73e8; }
+  .episode__cover {
+    display: none; }
+  .episode__title {
+    letter-spacing: .01785714em;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: #3c4043;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .episode__body {
+    overflow: hidden;
+    padding-bottom: 12px;
+    padding-right: 16px;
+    padding-top: 12px;
+    white-space: nowrap; }
+  .episode__meta {
+    display: flex;
+    letter-spacing: .025em;
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: #5f6368; }
+  .episode__number {
+    padding-right: 1rem; }
+  .episode__play-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer; }
+    .episode__play-button svg {
+      fill: #1a73e8; }
