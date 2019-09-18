@@ -1,6 +1,14 @@
 body {
   font-family: Roboto,Arial,sans-serif; }
 
+a {
+  color: inherit;
+  cursor: pointer;
+  transition: opacity .2s ease-in;
+  text-decoration: none; }
+  a:hover {
+    opacity: .6; }
+
 .container {
   margin: 0 auto;
   padding: 0 1em;
@@ -25,6 +33,12 @@ body {
   color: #3c4043;
   padding-top: 24px; }
 
+.show-sidebar {
+  color: #5f6368;
+  font-size: .75rem;
+  letter-spacing: .025em;
+  text-transform: uppercase; }
+
 .episodes__heading {
   font-family: "Open Sans", Roboto, Arial, sans-serif;
   font-size: 1.125rem;
@@ -35,7 +49,8 @@ body {
 
 .episode {
   display: flex;
-  border-bottom: 1px solid #dadce0; }
+  border-bottom: 1px solid #dadce0;
+  justify-content: space-between; }
 
 .episode__cover {
   display: none; }
@@ -63,3 +78,10 @@ body {
   font-weight: 400;
   line-height: 1rem;
   color: #5f6368; }
+
+.episode__play-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer; }
+  .episode__play-button svg {
+    fill: #1a73e8; }

@@ -5,7 +5,15 @@ $border-color: #dadce0;
 body {
     font-family: Roboto,Arial,sans-serif;;
 }
-
+a {
+    color: inherit;
+    cursor: pointer;
+    transition: opacity .2s ease-in;
+    text-decoration: none;
+    &:hover {
+        opacity: .6;
+    }
+}
 .container {
     margin: 0 auto;
     padding: 0 1em;
@@ -32,6 +40,12 @@ body {
     color: #3c4043;
     padding-top: 24px;
 }
+.show-sidebar {
+    color: #5f6368;
+    font-size: .75rem;
+    letter-spacing: .025em;
+    text-transform: uppercase;
+}
 
 // Episodes
 .episodes__heading {
@@ -45,6 +59,7 @@ body {
 .episode {
     display: flex;
     border-bottom: 1px solid $border-color;
+    justify-content: space-between;
 }
 .episode__cover {
     display: none;
@@ -72,4 +87,12 @@ body {
     font-weight: 400;
     line-height: 1rem;
     color: #5f6368;
+}
+.episode__play-button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    svg {
+        fill: #1a73e8;
+    }
 }
