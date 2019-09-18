@@ -20,5 +20,10 @@
     "node-sass": "^4.5.3",
     "npm-run-all": "^4.1.1",
     "postcss-cli": "^4.1.1"
+  },
+  "dependencies": {
+    "handlebars": "^4.2.0",
+    "handlebars-intl": "^1.1.2",
+    "jquery": "^3.4.1"
   }
 }
