@@ -17,10 +17,17 @@ a {
 .container {
     margin: 0 auto;
     padding: 0 1em;
-    max-width: 1040px;
+    max-width: 680px;
 }
 
 // Show
+.show {
+    display: flex;
+}
+.show__poster img {
+    width: 100px;
+    padding-right: 24px;
+}
 .show__title {
     font-family: $heading
 }
@@ -33,6 +40,7 @@ a {
     margin-top: 6px;
 }
 .show__description {
+    display: none;
     letter-spacing: .01428571em;
     font-size: .875rem;
     font-weight: 400;
@@ -45,6 +53,17 @@ a {
     font-size: .75rem;
     letter-spacing: .025em;
     text-transform: uppercase;
+    .show__utils {
+        display: none;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        margin-right: 24px;
+    }
 }
 
 // Episodes
@@ -87,6 +106,9 @@ a {
     font-weight: 400;
     line-height: 1rem;
     color: #5f6368;
+}
+.episode__number {
+    padding-right: 1rem;
 }
 .episode__play-button {
         background-color: transparent;
