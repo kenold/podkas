@@ -144,7 +144,7 @@ ul {
 // DESKTOP
 @media (min-width: 768px) {
     .container {
-        width: 840px;
+        width: 640px;
     }
     .show {
         &__poster {
@@ -153,17 +153,19 @@ ul {
             }
         }
         &__info {
-            flex: 1 1 50%;
+            flex: 2;
             padding-right: 20px;
         }
         &-action__list {
-            flex: 1 1 15%;
+            flex: 1;
             display: block;
             padding-top: 0;
             border: none;
         }
         &-action__item {
             margin-top: 5px;
+            margin-right: 0;
+            padding: 5px 0 5px 15px;
             a {
                 display: block;
             }
