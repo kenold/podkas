@@ -13,12 +13,12 @@
     <div class="container">
         <header class="show">
             <div class="show__poster">
-                <img src="images/covers/the-daily.jpg" alt="The Daily Show" class="show__image">
+                <img src="images/covers/the-business-dude.jpg" alt="The Business Dude" class="show__image">
             </div>
             <div class="show__info">
-                <div class="show__title">The Daily</div>
-                <div class="show__company">The New York Times</div>
-                <div class="show__description">This is what the news should sound like. The biggest stories of our time, told by the best journalists in the world. Hosted by... <a href="#">more</a></div>
+                <div class="show__title">The Business Dude</div>
+                <div class="show__company">Jean E. Gustave</div>
+                <div class="show__description">The Business Dude is a podcast for young Haitian entrepreneurs seeking for business answers and looking to learn how to start and run a business. <a href="#">more</a></div>
             </div>
             <ul class="show-action__list">
                 <li class="show-action__item"><a href="#"><i class="fas fa-play-circle"></i>Play</a></li>
@@ -33,13 +33,9 @@
             <div class="episode-list-container"></div>
 
             <script id="episode-template" type="text/x-handlebars-template">
-                <div class="episodes__heading">{{episodes.length}} episodes</div>
+                <div class="episodes__heading">{{episodes.length}} Episodes Available</div>
                 {{#each episodes}}
                 <div class="episode">
-                    <div class="episode__cover">
-                        <img src="images/covers/the-daily.jpg" alt="The Daily Show" width="40px">
-                    </div>
-
                     <div class="episode__body">
                         <a href="#">
                             <div class="episode__title">
