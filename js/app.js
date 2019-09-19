@@ -75,7 +75,11 @@ var podcast = {
 }
 
 $(document).ready(function() {
+    // register handlebarsIntl helper
+    HandlebarsIntl.registerWith(Handlebars);
+
     var episodeTemplate = $("#episode-template").html();
     var compliedEpisodeTemplate = Handlebars.compile(episodeTemplate);
     $(".episode-list-container").html(compliedEpisodeTemplate(podcast));
+
 });
