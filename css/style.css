@@ -22,43 +22,48 @@ li {
   padding: 0 1em; }
 
 .show {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
   .show__poster img {
     width: 100px;
-    padding-right: 24px; }
-  .show__title {
-    font-family: "Open Sans", Roboto, Arial, sans-serif; }
-  .show__company, .show__category {
+    padding-right: 24px;
+    flex: 1 1 50%; }
+  .show__info {
+    flex: 1 1 50%; }
+    .show__info a {
+      color: #1a73e8; }
+  .show__info-title {
+    font-family: "Open Sans", Roboto, Arial, sans-serif;
+    font-weight: 700; }
+  .show__info-company, .show__info-category {
     letter-spacing: .025em;
     font-size: .75rem;
     font-weight: 400;
     line-height: 1rem;
     color: #5f6368;
     margin-top: 6px; }
-  .show__category {
+  .show__info-category {
     text-transform: uppercase;
     margin-top: 0; }
-  .show__description {
+  .show__info-description {
     letter-spacing: .01428571em;
     font-size: .875rem;
     font-weight: 400;
     line-height: 1.25rem;
     color: #3c4043;
     padding-top: 14px; }
-  .show__info a {
-    color: #1a73e8; }
-
-.utils {
-  display: flex;
-  justify-content: center;
-  color: #5f6368;
-  font-size: .75rem;
-  letter-spacing: .025em;
-  text-transform: uppercase;
-  border-top: 1px solid #dadce0;
-  border-bottom: 1px solid #dadce0;
-  margin-top: 20px;
-  padding: 15px 0; }
+  .show__utils {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    color: #5f6368;
+    font-size: .75rem;
+    letter-spacing: .025em;
+    text-transform: uppercase;
+    border-top: 1px solid #dadce0;
+    border-bottom: 1px solid #dadce0;
+    margin-top: 20px;
+    padding: 15px 0; }
 
 .episodes__heading {
   font-family: "Open Sans", Roboto, Arial, sans-serif;
@@ -91,6 +96,7 @@ li {
     padding-top: 12px; }
   .episode__meta {
     display: flex;
+    align-items: center;
     letter-spacing: .025em;
     font-size: .75rem;
     font-weight: 400;
@@ -110,19 +116,19 @@ li {
     width: 720px; }
   .show__poster img {
     width: 150px; }
-  .show-main {
-    display: flex; }
-  .utils {
+  .show__utils {
     display: block;
     flex: 1 0 150px;
     padding-right: 24px;
     padding-top: 0;
     border: none; }
-    .utils li {
-      display: inline-block;
+    .show__utils li {
       border-bottom: 1px solid #dadce0;
-      padding-bottom: 15px;
-      width: 100%; }
-    .utils li + li {
+      padding-bottom: 15px; }
+      .show__utils li a {
+        display: block; }
+    .show__utils li + li {
       padding-top: 15px;
-      padding-bottom: 15px; } }
+      padding-bottom: 15px; }
+  .show-main {
+    display: flex; } }

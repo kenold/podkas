@@ -31,15 +31,24 @@ li {
 // Show
 .show {
     display: flex;
+    flex-wrap: wrap;
     &__poster img {
         width: 100px;
         padding-right: 24px;
+        flex: 1 1 50%;
     }
-    &__title {
-        font-family: $heading
+    &__info {
+        flex: 1 1 50%;
+        a {
+            color: $accent-color;
+        }
     }
-    &__company,
-    &__category {
+    &__info-title {
+        font-family: $heading;
+        font-weight: 700;
+    }
+    &__info-company,
+    &__info-category {
         letter-spacing: .025em;
         font-size: .75rem;
         font-weight: 400;
@@ -47,11 +56,11 @@ li {
         color: #5f6368;
         margin-top: 6px;
     }
-    &__category {
+    &__info-category {
         text-transform: uppercase;
         margin-top: 0;
     }
-    &__description {
+    &__info-description {
         letter-spacing: .01428571em;
         font-size: .875rem;
         font-weight: 400;
@@ -59,22 +68,19 @@ li {
         color: #3c4043;
         padding-top: 14px;
     }
-    &__info a {
-        color: $accent-color;
+    &__utils {
+        display: flex;
+        justify-content: center;
+        flex-basis: 100%;
+        color: #5f6368;
+        font-size: .75rem;
+        letter-spacing: .025em;
+        text-transform: uppercase;
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+        margin-top: 20px;
+        padding: 15px 0;
     }
-}
-
-.utils {
-    display: flex;
-    justify-content: center;
-    color: #5f6368;
-    font-size: .75rem;
-    letter-spacing: .025em;
-    text-transform: uppercase;
-    border-top: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;
-    margin-top: 20px;
-    padding: 15px 0;
 }
 
 // Episodes
@@ -113,6 +119,7 @@ li {
     }
     &__meta {
         display: flex;
+        align-items: center;
         letter-spacing: .025em;
         font-size: .75rem;
         font-weight: 400;
@@ -141,25 +148,26 @@ li {
         &__poster img {
             width: 150px;
         }
+        &__utils {
+            display: block;
+            flex: 1 0 150px;
+            padding-right: 24px;
+            padding-top: 0;
+            border: none;
+            li {
+                border-bottom: 1px solid $border-color;
+                padding-bottom: 15px;
+                a {
+                    display: block;
+                }
+            }
+            li + li {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+        }
     }
     .show-main {
         display: flex;
-    }
-    .utils {
-        display: block;
-        flex: 1 0 150px;
-        padding-right: 24px;
-        padding-top: 0;
-        border: none;
-        li {
-            display: inline-block;
-            border-bottom: 1px solid $border-color;
-            padding-bottom: 15px;
-            width: 100%;
-        }
-        li + li {
-            padding-top: 15px;
-            padding-bottom: 15px;
-        }
     }
 }
