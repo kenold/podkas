@@ -1,76 +1,86 @@
 var podcast = {
     "episodes": [
-        {
-            "id": 1,
-            "title": "est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum",
-            "description": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-            "date": "4/27/2019",
-            "duration": 37,
-            "file_path": 51
-          }, {
-            "id": 2,
-            "title": "amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesq",
-            "description": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
-            "date": "5/29/2019",
-            "duration": 31,
-            "file_path": 60
-          }, {
-            "id": 3,
-            "title": "diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum",
-            "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
-            "date": "8/21/2019",
-            "duration": 41,
-            "file_path": 84
-          }, {
-            "id": 4,
-            "title": "adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit",
-            "description": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
-            "date": "7/15/2019",
-            "duration": 5,
-            "file_path": 54
-          }, {
-            "id": 5,
-            "title": "eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus",
-            "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.",
-            "date": "9/12/2019",
-            "duration": 33,
-            "file_path": 75
-          }, {
-            "id": 6,
-            "title": "luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh fusce",
-            "description": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.",
-            "date": "4/3/2019",
-            "duration": 13,
-            "file_path": 88
-          }, {
-            "id": 7,
-            "title": "lectus pellentesque at nulla suspendisse potenti cras in purus eu magna",
-            "description": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.",
-            "date": "2/18/2019",
-            "duration": 10,
-            "file_path": 61
-          }, {
-            "id": 8,
-            "title": "aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet",
-            "description": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
-            "date": "9/9/2019",
-            "duration": 54,
-            "file_path": 58
-          }, {
-            "id": 9,
-            "title": "eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis",
-            "description": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.",
-            "date": "2/21/2019",
-            "duration": 38,
-            "file_path": 96
-          }, {
-            "id": 10,
-            "title": "potenti in eleifend quam a odio in hac habitasse platea dictumst",
-            "description": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
-            "date": "6/8/2019",
-            "duration": 23,
-            "file_path": 64
-          }
+      {
+        "id": 1,
+        "title": "in libero ut massa volutpat convallis morbi odio odio elementum eu",
+        "description": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
+        "date": "8/11/2019",
+        "duration": 47,
+        "file_path": 95,
+        "status": ""
+      }, {
+        "id": 2,
+        "title": "pede justo eu massa donec dapibus duis at velit eu est congue",
+        "description": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
+        "date": "7/1/2019",
+        "duration": 25,
+        "file_path": 74,
+        "status": "Played"
+      }, {
+        "id": 3,
+        "title": "quam sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis",
+        "description": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "date": "7/29/2019",
+        "duration": 52,
+        "file_path": 85,
+        "status": ""
+      }, {
+        "id": 4,
+        "title": "aliquet pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus",
+        "description": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.",
+        "date": "9/14/2019",
+        "duration": 23,
+        "file_path": 64,
+        "status": ""
+      }, {
+        "id": 5,
+        "title": "natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum",
+        "description": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
+        "date": "3/19/2019",
+        "duration": 5,
+        "file_path": 63,
+        "status": "Played"
+      }, {
+        "id": 6,
+        "title": "et tempus semper est quam pharetra magna ac consequat metus",
+        "description": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
+        "date": "6/20/2019",
+        "duration": 8,
+        "file_path": 60,
+        "status": "Played"
+      }, {
+        "id": 7,
+        "title": "pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus cum sociis",
+        "description": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
+        "date": "7/22/2019",
+        "duration": 5,
+        "file_path": 60,
+        "status": "Played"
+      }, {
+        "id": 8,
+        "title": "nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit",
+        "description": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
+        "date": "2/6/2019",
+        "duration": 29,
+        "file_path": 75,
+        "status": "Played"
+      }, {
+        "id": 9,
+        "title": "faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae",
+        "description": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
+        "date": "7/4/2019",
+        "duration": 19,
+        "file_path": 54,
+        "status": ""
+      }, {
+        "id": 10,
+        "title": "tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem",
+        "description": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
+        "date": "6/4/2019",
+        "duration": 38,
+        "file_path": 55,
+        "status": ""
+      }
     ]
 }
 
