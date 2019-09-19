@@ -11,8 +11,7 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 1em;
-  width: 620px; }
+  padding: 0 1em; }
 
 .show {
   display: flex; }
@@ -61,6 +60,9 @@ a {
 
 .episode {
   display: flex;
+  flex-grow: 1;
+  align-items: center;
+  flex-flow: nowrap;
   border-bottom: 1px solid #dadce0;
   justify-content: space-between; }
   .episode__cover {
@@ -74,6 +76,7 @@ a {
     overflow: hidden;
     text-overflow: ellipsis; }
   .episode__body {
+    flex: 1 1 auto;
     overflow: hidden;
     padding-bottom: 12px;
     padding-right: 16px;
@@ -86,8 +89,6 @@ a {
     font-weight: 400;
     line-height: 1rem;
     color: #5f6368; }
-  .episode__number {
-    padding-right: 1rem; }
   .episode__play-button {
     background-color: transparent;
     border: none;
