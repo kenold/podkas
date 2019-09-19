@@ -64,22 +64,6 @@ var podcast = {
         "duration": 29,
         "file_path": 75,
         "status": "Played"
-      }, {
-        "id": 9,
-        "title": "faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae",
-        "description": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
-        "date": "7/4/2019",
-        "duration": 19,
-        "file_path": 54,
-        "status": ""
-      }, {
-        "id": 10,
-        "title": "tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem",
-        "description": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
-        "date": "6/4/2019",
-        "duration": 38,
-        "file_path": 55,
-        "status": ""
       }
     ]
 }
