@@ -114,7 +114,7 @@ ul {
         text-transform: capitalize;
     }
     &__body {
-        // flex-basis: 100%;
+        flex-grow: 1;
         padding-bottom: 12px;
         padding-right: 16px;
         padding-top: 12px;

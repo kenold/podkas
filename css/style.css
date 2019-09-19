@@ -90,6 +90,7 @@ ul {
     color: #3c4043;
     text-transform: capitalize; }
   .episode__body {
+    flex-grow: 1;
     padding-bottom: 12px;
     padding-right: 16px;
     padding-top: 12px; }
