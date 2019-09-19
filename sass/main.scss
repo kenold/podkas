@@ -20,9 +20,6 @@ ul {
     margin: 0;
     padding: 0;
 }
-li {
-    margin-right: 24px;
-}
 .container {
     margin: 0 auto;
     padding: 0 1em;
@@ -32,10 +29,11 @@ li {
 .show {
     display: flex;
     flex-wrap: wrap;
-    &__poster img {
-        width: 100px;
+    &__poster {
         padding-right: 24px;
-        flex: 1 1 50%;
+        img {
+            width: 100px;
+        }
     }
     &__info {
         flex: 1 1 50%;
@@ -75,11 +73,14 @@ li {
         color: #5f6368;
         font-size: .75rem;
         letter-spacing: .025em;
+        margin-top: 15px;
         text-transform: uppercase;
-        border-top: 1px solid $border-color;
-        border-bottom: 1px solid $border-color;
-        margin-top: 20px;
-        padding: 15px 0;
+    }
+    &-action__item {
+        border: 1px solid $border-color;
+        border-radius: 10px;
+        padding: 10px;
+        margin-right: 10px;
     }
     &-action__item .fas {
         margin-right: 10px
@@ -145,35 +146,32 @@ li {
 // DESKTOP
 @media (min-width: 768px) {
     .container {
-        width: 720px;
+        width: 840px;
     }
     .show {
-        &__poster img {
-            width: 150px;
+        &__poster {
+            img {
+                width: 150px;
+            }
+        }
+        &__info {
+            flex: 1 1 50%;
+            padding-right: 20px;
         }
         &-action__list {
+            flex: 1 1 15%;
             display: block;
-            flex: 1 0 150px;
-            padding-right: 24px;
             padding-top: 0;
             border: none;
-            li {
-                border-bottom: 1px solid $border-color;
-                padding-bottom: 15px;
-                a {
-                    display: block;
-                }
-            }
-            li + li {
-                padding-top: 15px;
-                padding-bottom: 15px;
+        }
+        &-action__item {
+            margin-top: 5px;
+            a {
+                display: block;
             }
         }
         .show-action__item .fas {
             font-size: 1.125rem;
         }
-    }
-    .show-main {
-        display: flex;
     }
 }
