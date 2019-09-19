@@ -73,16 +73,13 @@ a {
     font-weight: 500;
     line-height: 1.25rem;
     color: #3c4043;
-    overflow: hidden;
-    text-overflow: ellipsis;
     text-transform: capitalize; }
   .episode__body {
     flex: 1 1 auto;
     overflow: hidden;
     padding-bottom: 12px;
     padding-right: 16px;
-    padding-top: 12px;
-    white-space: nowrap; }
+    padding-top: 12px; }
   .episode__meta {
     display: flex;
     letter-spacing: .025em;
