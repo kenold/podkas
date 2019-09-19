@@ -28,7 +28,7 @@ ul {
   .show__info {
     flex: 1 1 50%; }
     .show__info a {
-      color: #1a73e8; }
+      color: #EB5657; }
   .show__title {
     font-family: "Open Sans", Roboto, Arial, sans-serif;
     font-weight: 700; }
@@ -80,8 +80,6 @@ ul {
   align-items: center;
   flex-flow: nowrap;
   border-bottom: 1px solid #dadce0; }
-  .episode a {
-    display: block; }
   .episode__cover {
     display: none; }
   .episode__title {
@@ -107,7 +105,7 @@ ul {
     background-color: transparent;
     border: none;
     font-size: 1.5rem;
-    color: #1a73e8;
+    color: #EB5657;
     margin-left: auto; }
   .episode__status {
     text-transform: uppercase; }
