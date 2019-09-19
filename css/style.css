@@ -31,6 +31,7 @@ ul {
       color: #EB5657; }
   .show__title {
     font-family: "Open Sans", Roboto, Arial, sans-serif;
+    font-size: 1.5rem;
     font-weight: 700; }
   .show__company, .show__category {
     letter-spacing: .025em;
@@ -69,7 +70,7 @@ ul {
 .episodes__heading {
   font-family: "Open Sans", Roboto, Arial, sans-serif;
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.5rem;
   color: #202124;
   padding-top: 15px; }

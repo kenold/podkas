@@ -43,6 +43,7 @@ ul {
     }
     &__title {
         font-family: $heading;
+        font-size: 1.5rem;
         font-weight: 700;
     }
     &__company,
@@ -91,7 +92,7 @@ ul {
 .episodes__heading {
     font-family: $heading;
     font-size: 1.125rem;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1.5rem;
     color: $heading-color;
     padding-top: 15px;
