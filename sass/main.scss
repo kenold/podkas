@@ -113,11 +113,9 @@ li {
         color: #5f6368;
     }
     &__play-button {
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
-        svg {
-            fill: #D81422;
-        }
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: #D81422;
     }
 }

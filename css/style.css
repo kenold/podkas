@@ -94,6 +94,5 @@ li {
   .episode__play-button {
     background-color: transparent;
     border: none;
-    cursor: pointer; }
-    .episode__play-button svg {
-      fill: #D81422; }
+    cursor: pointer;
+    color: #D81422; }
