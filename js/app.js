@@ -9,14 +9,14 @@ var podcast = {
             "file_path": 51
           }, {
             "id": 2,
-            "title": "amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices",
+            "title": "amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesq",
             "description": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
             "date": "5/29/2019",
             "duration": 31,
             "file_path": 60
           }, {
             "id": 3,
-            "title": "diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus",
+            "title": "diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum",
             "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
             "date": "8/21/2019",
             "duration": 41,
@@ -44,7 +44,7 @@ var podcast = {
             "file_path": 88
           }, {
             "id": 7,
-            "title": "lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate luctus",
+            "title": "lectus pellentesque at nulla suspendisse potenti cras in purus eu magna",
             "description": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.",
             "date": "2/18/2019",
             "duration": 10,
