@@ -80,6 +80,8 @@ ul {
   align-items: center;
   flex-flow: nowrap;
   border-bottom: 1px solid #dadce0; }
+  .episode a {
+    display: block; }
   .episode__cover {
     display: none; }
   .episode__title {
@@ -90,8 +92,6 @@ ul {
     color: #3c4043;
     text-transform: capitalize; }
   .episode__body {
-    display: inline-block;
-    flex-basis: 100%;
     padding-bottom: 12px;
     padding-right: 16px;
     padding-top: 12px; }
