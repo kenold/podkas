@@ -15,6 +15,7 @@
   "author": "Kenold Beauplan",
   "license": "ISC",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.1",
     "autoprefixer": "^7.1.4",
     "concat": "^1.0.3",
     "node-sass": "^4.5.3",
