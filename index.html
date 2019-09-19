@@ -12,26 +12,21 @@
     <div class="container">
         <header class="show">
             <div class="show__poster">
-                <img src="images/covers/the-daily.jpg" alt="The Daily Show">
+                <img src="images/covers/the-daily.jpg" alt="The Daily Show" class="show__image">
             </div>
-            <div class="show__body">
+            <div class="show__info">
                 <div class="show__title">The Daily</div>
                 <div class="show__company">The New York Times</div>
-                <!-- <div class="show__category">News</div> -->
-                <div class="show__description">This is what the news should sound like. The biggest stories of our time, told by the best journalists in the world. Hosted by Michael Barbaro. Twenty minutes a day, five days a week, ready by 6 a.m.</div>
+                <div class="show__category">News</div>
             </div>
         </header>
 
-        <div class="content">
-            <div class="show-sidebar">
-                <ul class="show__utils">
-                    <li class="share">Share</li>
-                    <li class="embed">Embed</li>
-                    <li class="subscribe">Subscribe</li>
-                </ul>
-            </div>
-            <div class="episodes__heading">11 Episodes</div>
+        <div class="show-main">
+            <div class="show__description">This is what the news should sound like. The biggest stories of our time, told by the best journalists in the world. Hosted by Michael Barbaro. Twenty minutes a day, five days a week, ready by 6 a.m.</div>
 
+            <div class="episodes__heading">11 episodes</div>
+
+            <!-- place holder for dynamic data -->
             <div class="episode-list-container"></div>
 
             <script id="episode-template" type="text/x-handlebars-template">
