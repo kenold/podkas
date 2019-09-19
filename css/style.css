@@ -45,6 +45,8 @@ li {
     line-height: 1.25rem;
     color: #3c4043;
     padding-top: 14px; }
+  .show__info a {
+    color: #1a73e8; }
 
 .utils {
   display: flex;
@@ -52,7 +54,11 @@ li {
   color: #5f6368;
   font-size: .75rem;
   letter-spacing: .025em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  border-top: 1px solid #dadce0;
+  border-bottom: 1px solid #dadce0;
+  margin-top: 20px;
+  padding: 15px 0; }
 
 .episodes__heading {
   font-family: "Open Sans", Roboto, Arial, sans-serif;
@@ -67,8 +73,7 @@ li {
   flex-grow: 1;
   align-items: center;
   flex-flow: nowrap;
-  border-bottom: 1px solid #dadce0;
-  justify-content: space-between; }
+  border-bottom: 1px solid #dadce0; }
   .episode__cover {
     display: none; }
   .episode__title {
@@ -79,8 +84,8 @@ li {
     color: #3c4043;
     text-transform: capitalize; }
   .episode__body {
-    flex: 1 1 auto;
-    overflow: hidden;
+    display: inline-block;
+    flex-basis: 100%;
     padding-bottom: 12px;
     padding-right: 16px;
     padding-top: 12px; }
@@ -94,5 +99,10 @@ li {
   .episode__play-button {
     background-color: transparent;
     border: none;
-    cursor: pointer;
-    color: #D81422; }
+    font-size: 1.5rem;
+    color: #1a73e8;
+    margin-left: auto; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 620px; } }

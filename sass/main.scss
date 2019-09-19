@@ -1,3 +1,4 @@
+$accent-color: #1a73e8;
 $heading: 'Open Sans',Roboto,Arial,sans-serif;
 $heading-color: #202124;
 $border-color: #dadce0;
@@ -25,7 +26,6 @@ li {
 .container {
     margin: 0 auto;
     padding: 0 1em;
-    // width: 620px;
 }
 
 // Show
@@ -59,6 +59,9 @@ li {
         color: #3c4043;
         padding-top: 14px;
     }
+    &__info a {
+        color: $accent-color;
+    }
 }
 
 .utils {
@@ -68,6 +71,10 @@ li {
     font-size: .75rem;
     letter-spacing: .025em;
     text-transform: uppercase;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    margin-top: 20px;
+    padding: 15px 0;
 }
 
 // Episodes
@@ -85,7 +92,7 @@ li {
     align-items: center;
     flex-flow: nowrap;
     border-bottom: 1px solid $border-color;
-    justify-content: space-between;
+    // justify-content: space-between;
     &__cover {
         display: none;
     }
@@ -98,8 +105,8 @@ li {
         text-transform: capitalize;
     }
     &__body {
-        flex: 1 1 auto;
-        overflow: hidden;
+        display: inline-block;
+        flex-basis: 100%;
         padding-bottom: 12px;
         padding-right: 16px;
         padding-top: 12px;
@@ -115,7 +122,16 @@ li {
     &__play-button {
         background-color: transparent;
         border: none;
-        cursor: pointer;
-        color: #D81422;
+        font-size: 1.5rem;
+        color: $accent-color;
+        margin-left: auto;
+    }
+}
+
+
+// DESKTOP
+@media (min-width: 768px) {
+    .container {
+    width: 620px;
     }
 }
