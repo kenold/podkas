@@ -43,12 +43,12 @@ li {
             color: $accent-color;
         }
     }
-    &__info-title {
+    &__title {
         font-family: $heading;
         font-weight: 700;
     }
-    &__info-company,
-    &__info-category {
+    &__company,
+    &__category {
         letter-spacing: .025em;
         font-size: .75rem;
         font-weight: 400;
@@ -56,11 +56,11 @@ li {
         color: #5f6368;
         margin-top: 6px;
     }
-    &__info-category {
+    &__category {
         text-transform: uppercase;
         margin-top: 0;
     }
-    &__info-description {
+    &__description {
         letter-spacing: .01428571em;
         font-size: .875rem;
         font-weight: 400;
@@ -68,7 +68,7 @@ li {
         color: #3c4043;
         padding-top: 14px;
     }
-    &__utils {
+    &-action__list {
         display: flex;
         justify-content: center;
         flex-basis: 100%;
@@ -80,6 +80,9 @@ li {
         border-bottom: 1px solid $border-color;
         margin-top: 20px;
         padding: 15px 0;
+    }
+    &-action__item .fas {
+        margin-right: 10px
     }
 }
 
@@ -148,7 +151,7 @@ li {
         &__poster img {
             width: 150px;
         }
-        &__utils {
+        &-action__list {
             display: block;
             flex: 1 0 150px;
             padding-right: 24px;
@@ -165,6 +168,9 @@ li {
                 padding-top: 15px;
                 padding-bottom: 15px;
             }
+        }
+        .show-action__item .fas {
+            font-size: 1.125rem;
         }
     }
     .show-main {

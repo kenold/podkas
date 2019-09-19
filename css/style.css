@@ -32,27 +32,27 @@ li {
     flex: 1 1 50%; }
     .show__info a {
       color: #1a73e8; }
-  .show__info-title {
+  .show__title {
     font-family: "Open Sans", Roboto, Arial, sans-serif;
     font-weight: 700; }
-  .show__info-company, .show__info-category {
+  .show__company, .show__category {
     letter-spacing: .025em;
     font-size: .75rem;
     font-weight: 400;
     line-height: 1rem;
     color: #5f6368;
     margin-top: 6px; }
-  .show__info-category {
+  .show__category {
     text-transform: uppercase;
     margin-top: 0; }
-  .show__info-description {
+  .show__description {
     letter-spacing: .01428571em;
     font-size: .875rem;
     font-weight: 400;
     line-height: 1.25rem;
     color: #3c4043;
     padding-top: 14px; }
-  .show__utils {
+  .show-action__list {
     display: flex;
     justify-content: center;
     flex-basis: 100%;
@@ -64,6 +64,8 @@ li {
     border-bottom: 1px solid #dadce0;
     margin-top: 20px;
     padding: 15px 0; }
+  .show-action__item .fas {
+    margin-right: 10px; }
 
 .episodes__heading {
   font-family: "Open Sans", Roboto, Arial, sans-serif;
@@ -116,19 +118,21 @@ li {
     width: 720px; }
   .show__poster img {
     width: 150px; }
-  .show__utils {
+  .show-action__list {
     display: block;
     flex: 1 0 150px;
     padding-right: 24px;
     padding-top: 0;
     border: none; }
-    .show__utils li {
+    .show-action__list li {
       border-bottom: 1px solid #dadce0;
       padding-bottom: 15px; }
-      .show__utils li a {
+      .show-action__list li a {
         display: block; }
-    .show__utils li + li {
+    .show-action__list li + li {
       padding-top: 15px;
       padding-bottom: 15px; }
+  .show .show-action__item .fas {
+    font-size: 1.125rem; }
   .show-main {
     display: flex; } }

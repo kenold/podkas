@@ -16,15 +16,14 @@
                 <img src="images/covers/the-daily.jpg" alt="The Daily Show" class="show__image">
             </div>
             <div class="show__info">
-                <div class="show__info-title">The Daily</div>
-                <div class="show__info-company">The New York Times</div>
-                <div class="show__info-description">This is what the news should sound like. The biggest stories of our time, told by the best journalists in the world. Hosted by... <a href="#">more</a></div>
+                <div class="show__title">The Daily</div>
+                <div class="show__company">The New York Times</div>
+                <div class="show__description">This is what the news should sound like. The biggest stories of our time, told by the best journalists in the world. Hosted by... <a href="#">more</a></div>
             </div>
-            <ul class="show__utils">
-                <li class="show__utils-favorite"><a href="#"><i class="fas fa-heart"></i> Favorite</a></li>
-                <li class="show__utils-share"><a href="#"><i class="fas fa-share-alt"></i> Share</a></li>
-                <li class="show__utils-subscribe"><a href="#"><i class="fas fa-bell"></i> Subscribe</a></li>
-                <!-- <li class="website"><i class="fas fa-external-link-square-alt"></i> Website</li> -->
+            <ul class="show-action__list">
+                <li class="show-action__item"><a href="#"><i class="fas fa-play-circle"></i>Play</a></li>
+                <li class="show-action__item"><a href="#"><i class="fas fa-heart"></i>Favorite</a></li>
+                <li class="show-action__item"><a href="#"><i class="fas fa-share-alt"></i>Share</a></li>
             </ul>
         </header>
 
@@ -43,20 +42,21 @@
 
                     <div class="episode__body">
                         <a href="#">
-                        <div class="episode__title">
-                            {{title}}
-                        </div>
-                        <div class="episode__meta">
-                            <div class="episode__date">{{formatRelative date style="numeric"}}</div>
-                            <div class="episode__runtime">&nbsp;.&nbsp;{{duration}} mins</div>
-                            {{#if status}}
-                            <div class="episode__status">
-                                &nbsp;.&nbsp;{{{status}}}
+                            <div class="episode__title">
+                                {{title}}
                             </div>
-                            {{/if}}
-                        </div>
+                            <div class="episode__meta">
+                                <div class="episode__date">{{formatRelative date style="numeric"}}</div>
+                                <div class="episode__runtime">&nbsp;.&nbsp;{{duration}} mins</div>
+                                {{#if status}}
+                                <div class="episode__status">
+                                    &nbsp;.&nbsp;{{{status}}}
+                                </div>
+                                {{/if}}
+                            </div>
+                        </a>
                     </div>
-                    </a>
+
                     <a class="episode__play-button" href="{{file_path}}.mp3">
                         <i class="far fa-play-circle"></i>
                     </a>
