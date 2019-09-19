@@ -9,6 +9,14 @@ a {
   a:hover {
     opacity: .6; }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+li {
+  margin-right: 24px; }
+
 .container {
   margin: 0 auto;
   padding: 0 1em; }
@@ -36,21 +44,15 @@ a {
     font-weight: 400;
     line-height: 1.25rem;
     color: #3c4043;
-    padding-top: 24px; }
+    padding-top: 14px; }
 
-.show__utils {
+.utils {
+  display: flex;
+  justify-content: center;
   color: #5f6368;
   font-size: .75rem;
   letter-spacing: .025em;
   text-transform: uppercase; }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-
-li {
-  margin-right: 24px; }
 
 .episodes__heading {
   font-family: "Open Sans", Roboto, Arial, sans-serif;
