@@ -93,6 +93,7 @@ a {
         color: #3c4043;
         overflow: hidden;
         text-overflow: ellipsis;
+        text-transform: capitalize;
     }
     &__body {
         flex: 1 1 auto;

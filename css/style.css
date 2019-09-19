@@ -74,7 +74,8 @@ a {
     line-height: 1.25rem;
     color: #3c4043;
     overflow: hidden;
-    text-overflow: ellipsis; }
+    text-overflow: ellipsis;
+    text-transform: capitalize; }
   .episode__body {
     flex: 1 1 auto;
     overflow: hidden;
