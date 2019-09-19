@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Haiti Podcast</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -24,9 +25,9 @@
 
         <div class="show-main">
             <ul class="utils">
-                <li class="favorite">Favorite</li>
-                <li class="share">Share</li>
-                <li class="subscribe">Subscribe</li>
+                <li class="favorite"><i class="fas fa-heart"></i> Favorite</li>
+                <li class="share"><i class="fas fa-share-alt"></i> Share</li>
+                <li class="subscribe"><i class="fas fa-bell"></i> Subscribe</li>
             </ul>
 
             <div class="episodes__heading">11 episodes</div>
@@ -50,7 +51,7 @@
                         </div>
                     </div>
                     <a class="episode__play-button" href="{{file_path}}.mp3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/></svg>
+                        <i class="far fa-play-circle fa-2x"></i>
                     </a>
                 </div>
                 {{/each}}
