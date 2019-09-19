@@ -48,8 +48,13 @@
                             {{title}}
                         </div>
                         <div class="episode__meta">
-                            <div class="episode__date">{{formatRelative date style="numeric"}}&nbsp;.</div>
-                            <div class="episode__runtime">&nbsp;{{duration}} mins</div>
+                            <div class="episode__date">{{formatRelative date style="numeric"}}</div>
+                            <div class="episode__runtime">&nbsp;.&nbsp;{{duration}} mins</div>
+                            {{#if status}}
+                            <div class="episode__status">
+                                &nbsp;.&nbsp;{{{status}}}
+                            </div>
+                            {{/if}}
                         </div>
                     </div>
                     </a>
