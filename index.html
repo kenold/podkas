@@ -18,9 +18,8 @@
             <div class="show__info">
                 <div class="show__title">The Daily</div>
                 <div class="show__company">The New York Times</div>
-                <div class="show__description">This is what the news should sound like. The biggest stories of our time, told by the best journalists in the world. Hosted by Michael Barbaro. Twenty minutes a day, five days a week, ready by 6 a.m.</div>
+                <div class="show__description">This is what the news should sound like. The biggest stories of our time, told by the best journalists in the world. Hosted by... <a href="#">more</a></div>
             </div>
-
         </header>
 
         <div class="show-main">
@@ -28,6 +27,7 @@
                 <li class="favorite"><i class="fas fa-heart"></i> Favorite</li>
                 <li class="share"><i class="fas fa-share-alt"></i> Share</li>
                 <li class="subscribe"><i class="fas fa-bell"></i> Subscribe</li>
+                <!-- <li class="website"><i class="fas fa-external-link-square-alt"></i> Website</li> -->
             </ul>
 
             <div class="episodes__heading">11 episodes</div>
@@ -41,17 +41,20 @@
                     <div class="episode__cover">
                         <img src="images/covers/the-daily.jpg" alt="The Daily Show" width="40px">
                     </div>
+
                     <div class="episode__body">
+                        <a href="#">
                         <div class="episode__title">
-                            <a href="#">{{title}}</a>
+                            {{title}}
                         </div>
                         <div class="episode__meta">
                             <div class="episode__date">{{formatRelative date style="numeric"}}&nbsp;.</div>
                             <div class="episode__runtime">&nbsp;{{duration}} mins</div>
                         </div>
                     </div>
+                    </a>
                     <a class="episode__play-button" href="{{file_path}}.mp3">
-                        <i class="far fa-play-circle fa-2x"></i>
+                        <i class="far fa-play-circle"></i>
                     </a>
                 </div>
                 {{/each}}
