@@ -126,6 +126,9 @@ li {
         color: $accent-color;
         margin-left: auto;
     }
+    &__status {
+        text-transform: uppercase;
+    }
 }
 
 

@@ -102,6 +102,8 @@ li {
     font-size: 1.5rem;
     color: #1a73e8;
     margin-left: auto; }
+  .episode__status {
+    text-transform: uppercase; }
 
 @media (min-width: 768px) {
   .container {
