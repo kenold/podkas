@@ -13,7 +13,7 @@
     <div class="container">
         <header class="show">
             <div class="show__poster">
-                <img src="images/covers/the-business-dude.jpg" alt="The Business Dude" class="show__image">
+                <img src="images/covers/vergecast.png" alt="The Business Dude" class="show__image">
             </div>
             <div class="show__info">
                 <div class="show__title">The Business Dude</div>
@@ -36,8 +36,9 @@
                 <div class="episodes__heading">{{episodes.length}} Episodes Available</div>
                 {{#each episodes}}
                 <div class="episode">
-                    <div class="episode__body">
                         <a href="#">
+                    <div class="episode__body">
+
                             <div class="episode__title">
                                 {{title}}
                             </div>
@@ -50,9 +51,9 @@
                                 </div>
                                 {{/if}}
                             </div>
-                        </a>
-                    </div>
 
+                    </div>
+                </a>
                     <a class="episode__play-button" href="{{file_path}}.mp3">
                         <i class="far fa-play-circle"></i>
                     </a>
