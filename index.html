@@ -24,18 +24,17 @@
 
         <div class="show-main">
             <ul class="utils">
-                <li class="favorite"><i class="fas fa-heart"></i> Favorite</li>
-                <li class="share"><i class="fas fa-share-alt"></i> Share</li>
-                <li class="subscribe"><i class="fas fa-bell"></i> Subscribe</li>
+                <li class="favorite"><a href="#"><i class="fas fa-heart"></i> Favorite</a></li>
+                <li class="share"><a href="#"><i class="fas fa-share-alt"></i> Share</a></li>
+                <li class="subscribe"><a href="#"><i class="fas fa-bell"></i> Subscribe</a></li>
                 <!-- <li class="website"><i class="fas fa-external-link-square-alt"></i> Website</li> -->
             </ul>
-
-            <div class="episodes__heading">11 episodes</div>
 
             <!-- place holder for dynamic data -->
             <div class="episode-list-container"></div>
 
             <script id="episode-template" type="text/x-handlebars-template">
+                <div class="episodes__heading">{{episodes.length}} episodes</div>
                 {{#each episodes}}
                 <div class="episode">
                     <div class="episode__cover">
