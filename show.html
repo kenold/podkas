@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Haiti Podcast</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="show">
+            <div class="show__poster">
+                <img src="images/covers/vergecast.png" alt="The Business Dude" class="show__image">
+            </div>
+            <div class="show__info">
+                <div class="show__title">The Business Dude</div>
+                <div class="show__company">Jean E. Gustave</div>
+                <div class="show__description">The Business Dude is a podcast for young Haitian entrepreneurs seeking for business answers and looking to learn how to start and run a business. <a href="#">more</a></div>
+            </div>
+            <ul class="show-action__list">
+                <li class="show-action__item"><a href="#"><i class="fas fa-play-circle"></i>Play</a></li>
+                <li class="show-action__item"><a href="#"><i class="fas fa-heart"></i>Favorite</a></li>
+                <li class="show-action__item"><a href="#"><i class="fas fa-share-alt"></i>Share</a></li>
+            </ul>
+        </header>
+
+        <div class="show-main">
+
+            <!-- place holder for dynamic data -->
+            <div class="episode-list-container"></div>
+
+            <script id="episode-template" type="text/x-handlebars-template">
+                <div class="episodes__heading">{{episodes.length}} Episodes Available</div>
+                {{#each episodes}}
+                <div class="episode">
+                    <div class="episode__body">
+                        <a href="#">
+                            <div class="episode__title">
+                                {{title}}
+                            </div>
+                            <div class="episode__meta">
+                                <div class="episode__date">{{formatRelative date style="numeric"}}</div>
+                                <div class="episode__runtime">&nbsp;.&nbsp;{{duration}} mins</div>
+                                {{#if status}}
+                                <div class="episode__status">
+                                    &nbsp;.&nbsp;{{{status}}}
+                                </div>
+                                {{/if}}
+                            </div>
+                        </a>
+                    </div>
+
+                    <a class="episode__play-button" href="{{file_path}}.mp3">
+                        <i class="far fa-play-circle"></i>
+                    </a>
+                </div>
+                {{/each}}
+            </script>
+        </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
+    <script src="node_modules/handlebars-intl/dist/handlebars-intl.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
