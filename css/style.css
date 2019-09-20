@@ -114,7 +114,7 @@ ul {
 
 @media (min-width: 768px) {
   .container {
-    width: 640px; }
+    width: 800px; }
   .show__poster img {
     width: 150px; }
   .show__info {

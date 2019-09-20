@@ -2,6 +2,7 @@ $accent-color: #EB5657;
 $heading: 'Open Sans',Roboto,Arial,sans-serif;
 $heading-color: #202124;
 $border-color: #dadce0;
+$layout-width: 800px;
 
 body {
     font-family: Roboto,Arial,sans-serif;;
@@ -145,7 +146,7 @@ ul {
 // DESKTOP
 @media (min-width: 768px) {
     .container {
-        width: 640px;
+        width: $layout-width;
     }
     .show {
         &__poster {
