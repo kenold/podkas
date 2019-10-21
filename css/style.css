@@ -30,8 +30,9 @@ ul {
     .show__info a {
       color: #EB5657; }
   .show__title {
-    font-size: 2.25rem;
-    font-weight: 700; }
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center; }
   .show__company, .show__category {
     letter-spacing: .025em;
     font-size: .75rem;
@@ -50,16 +51,15 @@ ul {
     padding-top: 14px; }
   .show-action__list {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     color: #5f6368;
     letter-spacing: .025em;
     margin-top: 15px; }
   .show-action__item {
-    margin-right: 10px;
-    margin-top: 0.75rem; }
+    margin-top: 0.5rem; }
     .show-action__item img {
       width: 180px; }
-  .show-action__item .fas {
-    margin-right: 10px; }
 
 button {
   background: transparent;
@@ -73,7 +73,7 @@ button {
   padding-top: 15px; }
 
 .episodes {
-  margin-top: 2rem; }
+  margin-top: 1rem; }
 
 .episode {
   display: flex;
@@ -95,7 +95,6 @@ button {
     margin-bottom: 5px; }
   .episode__body {
     flex-grow: 1;
-    padding-right: 2rem;
     margin-left: 1rem; }
   .episode__description {
     line-height: 24px;
@@ -111,13 +110,15 @@ button {
     opacity: .5;
     text-transform: uppercase; }
   .episode__expand {
-    color: #8e8e93; }
+    display: none; }
 
 @media (min-width: 768px) {
   .container {
     width: 800px; }
   .show {
     flex-direction: row; }
+    .show__title {
+      font-size: 2.25rem; }
     .show__poster img {
       width: 265px; }
     .show__info {
@@ -131,10 +132,14 @@ button {
       line-height: 28px; }
     .show-action__list {
       flex-direction: row; }
-    .show .show-action__item .fas {
-      font-size: 1.125rem; }
+    .show .show-action__item {
+      margin-right: 10px; }
   .episode {
     padding: 1.5rem 0; }
+    .episode__body {
+      padding-right: 2rem; }
     .episode__description {
       color: #8e8e93;
-      display: block; } }
+      display: block; }
+    .episode__expand {
+      color: #8e8e93; } }
