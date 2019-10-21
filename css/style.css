@@ -83,12 +83,14 @@ button {
   line-height: 1.5rem;
   padding-top: 15px; }
 
+.episodes {
+  margin-top: 2rem; }
+
 .episode {
   display: flex;
   flex-grow: 1;
   flex-flow: nowrap;
   border-bottom: 1px solid #dadce0;
-  margin-top: 2rem;
   padding: 1rem 0; }
   .episode__cover {
     display: none; }
