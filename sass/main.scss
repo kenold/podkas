@@ -113,6 +113,7 @@ button {
     flex-flow: nowrap;
     border-bottom: 1px solid $border-color;
     margin-top: 2rem;
+    padding: 1rem 0;
     &__cover {
         display: none;
     }
@@ -130,7 +131,6 @@ button {
     }
     &__body {
         flex-grow: 1;
-        padding-bottom: 12px;
         padding-right: 2rem;
         margin-left: 1rem;
     }
@@ -182,7 +182,7 @@ button {
         }
     }
     .episode {
-        margin-top: 3rem;
+        padding: 1.5rem 0;
         &__description {
             display: block;
         }
