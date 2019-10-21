@@ -1,4 +1,5 @@
 $accent-color: #EB5657;
+$light-color: #8e8e93;
 $border-color: #dadce0;
 $layout-width: 800px;
 
@@ -67,27 +68,15 @@ ul {
     }
     &-action__list {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         color: #5f6368;
         letter-spacing: .025em;
         margin-top: 15px;
     }
     &-action__item {
-        border: 1px solid $border-color;
-        border-radius: 25px;
         margin-right: 10px;
         margin-top: 0.75rem;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 48px;
-        >span {
-            margin-right: 0.5rem;
-        }
         img {
-            max-width: 90px;
+            width: 180px;
         }
     }
     &-action__item .fas {
@@ -151,6 +140,9 @@ button {
         opacity: .5;
         text-transform: uppercase;
     }
+    &__expand {
+        color: $light-color;
+    }
 }
 
 
@@ -173,6 +165,7 @@ button {
             padding-right: 20px;
         }
         &__description {
+            color: #8e8e93;
             font-size: 1.375rem;
             line-height: 28px;
         }
@@ -186,6 +179,7 @@ button {
     .episode {
         padding: 1.5rem 0;
         &__description {
+            color: #8e8e93;
             display: block;
         }
     }
