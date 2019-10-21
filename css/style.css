@@ -141,6 +141,7 @@ button {
       color: #8e8e93;
       display: block; }
     .episode__expand {
+      display: block;
       color: #8e8e93; }
     .episode__meta {
       margin-top: 1rem; } }
