@@ -1,5 +1,6 @@
 body {
-  font-family: Roboto,Arial,sans-serif; }
+  font-family: Karla, -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
+  margin-top: 4rem; }
 
 a {
   color: inherit;
@@ -20,18 +21,16 @@ ul {
 
 .show {
   display: flex;
-  flex-wrap: wrap; }
-  .show__poster {
-    padding-right: 24px; }
-    .show__poster img {
-      width: 100px; }
+  flex-direction: column; }
+  .show__poster img {
+    width: 100%;
+    border-radius: 10px; }
   .show__info {
-    flex: 1 1 50%; }
+    padding-top: 1rem; }
     .show__info a {
       color: #EB5657; }
   .show__title {
-    font-family: "Open Sans", Roboto, Arial, sans-serif;
-    font-size: 1.5rem;
+    font-size: 2.25rem;
     font-weight: 700; }
   .show__company, .show__category {
     letter-spacing: .025em;
@@ -45,56 +44,71 @@ ul {
     margin-top: 0; }
   .show__description {
     letter-spacing: .01428571em;
-    font-size: .875rem;
     font-weight: 400;
     line-height: 1.25rem;
     color: #3c4043;
     padding-top: 14px; }
   .show-action__list {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-basis: 100%;
     color: #5f6368;
-    font-size: .75rem;
     letter-spacing: .025em;
-    margin-top: 15px;
-    text-transform: uppercase; }
+    margin-top: 15px; }
   .show-action__item {
     border: 1px solid #dadce0;
-    border-radius: 10px;
-    padding: 10px;
-    margin-right: 10px; }
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-top: 0.75rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px; }
+    .show-action__item > span {
+      margin-right: 0.5rem; }
+    .show-action__item img {
+      max-width: 90px; }
   .show-action__item .fas {
     margin-right: 10px; }
 
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer; }
+
 .episodes__heading {
-  font-family: "Open Sans", Roboto, Arial, sans-serif;
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.5rem;
-  color: #202124;
   padding-top: 15px; }
 
 .episode {
   display: flex;
   flex-grow: 1;
-  align-items: center;
   flex-flow: nowrap;
-  border-bottom: 1px solid #dadce0; }
+  border-bottom: 1px solid #dadce0;
+  margin-top: 2rem; }
   .episode__cover {
     display: none; }
+  .episode__button--play {
+    align-self: flex-start;
+    font-size: 3rem; }
   .episode__title {
     letter-spacing: .01785714em;
-    font-size: .875rem;
-    font-weight: 500;
-    line-height: 1.25rem;
-    color: #3c4043;
-    text-transform: capitalize; }
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: capitalize;
+    margin-bottom: 5px; }
   .episode__body {
     flex-grow: 1;
     padding-bottom: 12px;
-    padding-right: 16px;
-    padding-top: 12px; }
+    padding-right: 2rem;
+    margin-left: 1rem; }
+  .episode__description {
+    line-height: 24px;
+    display: none; }
   .episode__meta {
     display: flex;
     align-items: center;
@@ -102,34 +116,30 @@ ul {
     font-size: .75rem;
     font-weight: 400;
     line-height: 1rem;
-    color: #5f6368; }
-  .episode__play-button {
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
-    color: #EB5657;
-    margin-left: auto; }
-  .episode__status {
+    margin-top: 1rem;
+    opacity: .5;
     text-transform: uppercase; }
 
 @media (min-width: 768px) {
   .container {
     width: 800px; }
-  .show__poster img {
-    width: 150px; }
-  .show__info {
-    flex: 2;
-    padding-right: 20px; }
-  .show-action__list {
-    flex: 1;
-    display: block;
-    padding-top: 0;
-    border: none; }
-  .show-action__item {
-    margin-top: 5px;
-    margin-right: 0;
-    padding: 5px 0 5px 15px; }
-    .show-action__item a {
-      display: block; }
-  .show .show-action__item .fas {
-    font-size: 1.125rem; } }
+  .show {
+    flex-direction: row; }
+    .show__poster img {
+      width: 265px; }
+    .show__info {
+      flex: 2;
+      margin-left: 2rem;
+      padding-top: 0;
+      padding-right: 20px; }
+    .show__description {
+      font-size: 1.375rem;
+      line-height: 28px; }
+    .show-action__list {
+      flex-direction: row; }
+    .show .show-action__item .fas {
+      font-size: 1.125rem; }
+  .episode {
+    margin-top: 3rem; }
+    .episode__description {
+      display: block; } }
