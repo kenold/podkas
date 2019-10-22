@@ -1,30 +1,54 @@
-$( document ).ready(function() {
-    getUserAgent();
+// $( document ).ready(function() {
+//     getUserAgent();
 
-    function getUserAgent() {
-        var el = document.getElementById('badges-list');
+//     function getUserAgent() {
+//         var el = document.getElementById('badges-list');
 
-        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-        if(/android/i.test(userAgent)){
-            el.innerHTML =
-            `<div class="badge badge--google">
-                <a href="#"><img src="images/logos/podcast-badge-google.svg" alt="Google Podcast Logo" /></a>
-            </div>` + el.innerHTML;
-        }
-        else if(/iPad|iPhone|iPod/i.test(userAgent)){
-            el.innerHTML =
-            `<div class="badge badge--apple">
-                <a href="#"><img src="images/logos/podcast-badge-apple.svg" alt="Apple Podcast Logo" /></a>
-            </div>` + el.innerHTML;
-        }
-        else {
-        el.innerHTML =
-            `<div class="badge badge--google">
-                <a href="#"><img src="images/logos/podcast-badge-google.svg" alt="Google Podcast Logo" /></a>
-            </div>
-            <div class="badge badge--apple">
-                <a href="#"><img src="images/logos/podcast-badge-apple.svg" alt="Apple Podcast Logo" /></a>
-            </div>` + el.innerHTML;
-        }
-    }
-});
+//         const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+//         if(/android/i.test(userAgent)){
+//             el.innerHTML =
+//             `<div class="badge badge--google">
+//                 <a href="#"><img src="images/logos/podcast-badge-google.svg" alt="Google Podcast Logo" /></a>
+//             </div>` + el.innerHTML;
+//         }
+//         else if(/iPad|iPhone|iPod/i.test(userAgent)){
+//             el.innerHTML =
+//             `<div class="badge badge--apple">
+//                 <a href="#"><img src="images/logos/podcast-badge-apple.svg" alt="Apple Podcast Logo" /></a>
+//             </div>` + el.innerHTML;
+//         }
+//         else {
+//         el.innerHTML =
+//             `<div class="badge badge--google">
+//                 <a href="#"><img src="images/logos/podcast-badge-google.svg" alt="Google Podcast Logo" /></a>
+//             </div>
+//             <div class="badge badge--apple">
+//                 <a href="#"><img src="images/logos/podcast-badge-apple.svg" alt="Apple Podcast Logo" /></a>
+//             </div>` + el.innerHTML;
+//         }
+//     }
+// });
+
+var md = new MobileDetect(window.navigator.userAgent);
+var el = document.getElementById('badges-list');
+
+//console.log( md.is('iPhone') );
+if (md.is('iPhone')) {
+    el.innerHTML =
+    `<div class="badge badge--apple">
+        <a href="#"><img src="images/logos/podcast-badge-apple.svg" alt="Apple Podcast Logo" /></a>
+    </div>` + el.innerHTML;
+} else if (md.is('AndroidOS')) {
+    el.innerHTML =
+    `<div class="badge badge--google">
+        <a href="#"><img src="images/logos/podcast-badge-google.svg" alt="Google Podcast Logo" /></a>
+    </div>` + el.innerHTML;
+} else {
+    el.innerHTML =
+        `<div class="badge badge--google">
+            <a href="#"><img src="images/logos/podcast-badge-google.svg" alt="Google Podcast Logo" /></a>
+        </div>
+        <div class="badge badge--apple">
+            <a href="#"><img src="images/logos/podcast-badge-apple.svg" alt="Apple Podcast Logo" /></a>
+        </div>` + el.innerHTML;
+}
