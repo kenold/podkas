@@ -134,6 +134,9 @@ button {
         width: 180px; }
   .episode {
     padding: 1.5rem 0; }
+    .episode__title {
+      font-size: 1.5rem;
+      line-height: 30px; }
     .episode__body {
       margin-left: 1rem;
       padding-right: 2rem; }
