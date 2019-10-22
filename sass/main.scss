@@ -141,7 +141,11 @@ button {
         display: none;
     }
 }
-
+.main__footer {
+    border: 1px solid $border-color;
+    color: rgba(0,0,0, .8);
+    padding: 2rem;
+}
 
 // DESKTOP
 @media (min-width: 768px) {
