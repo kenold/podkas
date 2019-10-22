@@ -1,6 +1,6 @@
 body {
   font-family: Karla, -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
-  margin-top: 4rem; }
+  margin-top: .5rem; }
 
 a {
   color: inherit;
@@ -21,18 +21,16 @@ ul {
 
 .show {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  text-align: center; }
   .show__poster img {
-    width: 100%;
+    width: 200px;
     border-radius: 10px; }
   .show__info {
     padding-top: 1rem; }
-    .show__info a {
-      color: #EB5657; }
   .show__title {
     font-size: 2rem;
-    font-weight: 700;
-    text-align: center; }
+    font-weight: 700; }
   .show__company, .show__category {
     letter-spacing: .025em;
     font-size: .75rem;
@@ -57,7 +55,8 @@ ul {
     letter-spacing: .025em;
     margin-top: 15px; }
   .show-action__item {
-    margin-top: 0.5rem; }
+    margin-top: 0.5rem;
+    margin-right: 10px; }
     .show-action__item img {
       width: 180px; }
 
@@ -115,7 +114,8 @@ button {
   .container {
     width: 800px; }
   .show {
-    flex-direction: row; }
+    flex-direction: row;
+    text-align: left; }
     .show__title {
       font-size: 2.25rem; }
     .show__poster img {
@@ -131,8 +131,6 @@ button {
       line-height: 28px; }
     .show-action__list {
       flex-direction: row; }
-    .show-action__item {
-      margin-right: 10px; }
   .episode {
     padding: 1.5rem 0; }
     .episode__body {

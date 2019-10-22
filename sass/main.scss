@@ -5,7 +5,7 @@ $layout-width: 800px;
 
 body {
     font-family: Karla, -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
-    margin-top: 4rem;
+    margin-top: .5rem;
 }
 a {
     color: inherit;
@@ -30,22 +30,19 @@ ul {
 .show {
     display: flex;
     flex-direction: column;
+    text-align: center;
     &__poster {
         img {
-            width: 100%;
+            width: 200px;
             border-radius: 10px;
         }
     }
     &__info {
         padding-top: 1rem;
-        a {
-            color: $accent-color;
-        }
     }
     &__title {
         font-size: 2rem;
         font-weight: 700;
-        text-align: center;
     }
     &__company,
     &__category {
@@ -77,6 +74,7 @@ ul {
     }
     &-action__item {
         margin-top: 0.5rem;
+        margin-right: 10px;
         img {
             width: 180px;
         }
@@ -150,6 +148,7 @@ button {
     }
     .show {
         flex-direction: row;
+        text-align: left;
         &__title {
             font-size: 2.25rem;
         }
@@ -173,7 +172,7 @@ button {
             flex-direction: row;
         }
         &-action__item {
-            margin-right: 10px;
+
         }
     }
     .episode {
