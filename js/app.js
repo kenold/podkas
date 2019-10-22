@@ -4,7 +4,7 @@ $( document ).ready(function() {
     function getUserAgent() {
         var el = document.getElementById('badges-list');
 
-        const userAgent = navigator.userAgent;
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
         if(/android/i.test(userAgent)){
             el.innerHTML =
             `<div class="badge badge--google">
