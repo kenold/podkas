@@ -75,6 +75,8 @@ button {
   flex-flow: nowrap;
   border-bottom: 1px solid #dadce0;
   padding: 1rem 0; }
+  .episode:last-child {
+    border-bottom: none; }
   .episode__cover {
     display: none; }
   .episode__button--play {

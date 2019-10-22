@@ -94,6 +94,9 @@ button {
     flex-flow: nowrap;
     border-bottom: 1px solid $border-color;
     padding: 1rem 0;
+    &:last-child {
+        border-bottom: none;
+    }
     &__cover {
         display: none;
     }
