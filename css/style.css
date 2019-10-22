@@ -45,6 +45,9 @@ ul {
     color: #3c4043;
     padding-top: 14px; }
 
+.hide {
+  display: none; }
+
 .badges {
   display: flex;
   justify-content: center;
