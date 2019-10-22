@@ -44,16 +44,18 @@ ul {
     line-height: 26px;
     color: #3c4043;
     padding-top: 14px; }
-  .show-action__list {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 15px; }
-  .show-action__item {
-    margin-top: 0.5rem; }
-    .show-action__item img {
-      width: 100%;
-      height: 48px; }
+
+.badges {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 15px; }
+
+.badge {
+  margin-top: 0.5rem; }
+  .badge img {
+    width: 100%;
+    height: 48px; }
 
 button {
   background: transparent;
@@ -131,12 +133,12 @@ button {
       margin-left: 2rem;
       padding-top: 0;
       padding-right: 20px; }
-    .show-action__list {
-      flex-direction: row; }
-    .show-action__item {
-      margin-left: 1rem; }
-      .show-action__item img {
-        width: 180px; }
+  .badges {
+    flex-direction: row; }
+  .badge {
+    margin-left: 1rem; }
+    .badge img {
+      width: 180px; }
   .episode {
     padding: 1.5rem 0; }
     .episode__title {

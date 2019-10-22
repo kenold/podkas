@@ -59,18 +59,18 @@ ul {
         color: #3c4043;
         padding-top: 14px;
     }
-    &-action__list {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin-top: 15px;
-    }
-    &-action__item {
-        margin-top: 0.5rem;
-        img {
-            width: 100%;
-            height: 48px;
-        }
+}
+.badges {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.badge {
+    margin-top: 0.5rem;
+    img {
+        width: 100%;
+        height: 48px;
     }
 }
 button {
@@ -169,14 +169,14 @@ button {
             padding-top: 0;
             padding-right: 20px;
         }
-        &-action__list {
-            flex-direction: row;
-        }
-        &-action__item {
-            margin-left: 1rem;
-            img {
-                width: 180px;
-            }
+    }
+    .badges {
+        flex-direction: row;
+    }
+    .badge {
+        margin-left: 1rem;
+        img {
+            width: 180px;
         }
     }
     .episode {
